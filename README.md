@@ -42,6 +42,8 @@ var content = "Welcome {{first}} {{lastName}}.";
 var message = Tags.get(content, tags, false); //"Welcome  Smith."
 ```
 
+Tag.js does not escape strings like [Mustache] and [Handlebars]. This library is designed for tag replacement on simple strings such as paths and phases. For a complete template solution see [Mustache] or [Handlebars].
+
 Compatibility
 -------------
 Tags.js has been tested in all modern browsers and Internet Explorer 7+.
@@ -51,3 +53,4 @@ License
 Released under [MIT License].
 [MIT License]: http://mit-license.org/
 [Mustache]: http://mustache.github.io/
+[Handlebars]: http://handlebarsjs.com/

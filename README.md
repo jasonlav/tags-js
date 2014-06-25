@@ -1,5 +1,5 @@
 #Tags.js
-####Minimalist [Mustache]-style tag replacement for simple strings.
+####Minimalist [Mustache]/[Handlebar] style tag replacement for simple strings.
 
 Installation
 ------------

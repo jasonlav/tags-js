@@ -30,7 +30,7 @@ var tags = {
 	lastName: "Smith"
 };
 var content = "Welcome {{first}} {{lastName}}.";
-var message = Tags.get(content, tags); //"Welcome {{first}} Smith."
+var message = Tags.get(content, tags); //"Welcome  Smith."
 ```
 
 Tag stripping disabled
@@ -39,7 +39,7 @@ var tags = {
 	lastName: "Smith"
 };
 var content = "Welcome {{first}} {{lastName}}.";
-var message = Tags.get(content, tags, false); //"Welcome  Smith."
+var message = Tags.get(content, tags, false); //"Welcome {{first}} Smith."
 ```
 
 Tag.js does not escape strings like [Mustache] and [Handlebars]. This library is designed for tag replacement on simple strings such as paths and phases. For a complete template solution see [Mustache] or [Handlebars].

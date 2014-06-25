@@ -4,7 +4,7 @@ function Tags() {}
  */
 Tags.get = function (content, tags, strip) {
 	if(typeof strip !== "boolean") {
-		strip = false;
+		strip = true;
 	}
 
 	if(typeof content === "object") {

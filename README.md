@@ -1,5 +1,5 @@
 #Tags.js
-####Minimalist Mustache-style tag replacement for simple strings.
+####Minimalist [Mustache]-style tag replacement for simple strings.
 
 Installation
 ------------
@@ -50,3 +50,4 @@ License
 -------------
 Released under [MIT License].
 [MIT License]: http://mit-license.org/
+[Mustache]: http://mustache.github.io/

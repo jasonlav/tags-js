@@ -14,35 +14,32 @@ Usage
 -----
 Simple
 ``` javascript
-	var tags = {
-		firstName: "John",
-		lastName: "Smith"
-	};
-	var content = "Welcome {{firstName}} {{lastName}}.";
-
-	var message = Tags.get(content, tags); //"Welcome John Smith."
+var tags = {
+	firstName: "John",
+	lastName: "Smith"
+};
+var content = "Welcome {{firstName}} {{lastName}}.";
+var message = Tags.get(content, tags); //"Welcome John Smith."
 ```
 
 By default, Tags.js will remove all tags even if a matching value is not provided. Mustache and Handlebars function in the same manner. This behavior can be changed by disabling tag stripping.
 
 Tag stripping enabled (default)
 ``` javascript
-	var tags = {
-		lastName: "Smith"
-	};
-	var content = "Welcome {{first}} {{lastName}}.";
-
-	var message = Tags.get(content, tags); //"Welcome {{first}} Smith."
+var tags = {
+	lastName: "Smith"
+};
+var content = "Welcome {{first}} {{lastName}}.";
+var message = Tags.get(content, tags); //"Welcome {{first}} Smith."
 ```
 
 Tag stripping disabled
 ``` javascript
-	var tags = {
-		lastName: "Smith"
-	};
-	var content = "Welcome {{first}} {{lastName}}.";
-
-	var message = Tags.get(content, tags, false); //"Welcome  Smith."
+var tags = {
+	lastName: "Smith"
+};
+var content = "Welcome {{first}} {{lastName}}.";
+var message = Tags.get(content, tags, false); //"Welcome  Smith."
 ```
 
 Compatibility

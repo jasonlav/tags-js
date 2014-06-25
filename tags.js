@@ -1,7 +1,12 @@
-function Tags() {}
-/**
- * Get
+/*!
+ * Tags.js - Minimalist Mustache-style tag replacement for simple strings.
+ * (c) 2014 Jason Lavorante
+ * MIT Licensed.
+ *
+ * https://github.com/jasonlav/tags-js
  */
+
+function Tags() {}
 Tags.get = function (content, tags, strip) {
 	if(typeof strip !== "boolean") {
 		strip = true;
@@ -18,9 +23,6 @@ Tags.get = function (content, tags, strip) {
 	return content;
 };
 
-/**
- * Replace tags
- */
 Tags.replaceTags = function(content, tags, strip) {
 	return content.replace(/{{(.*?)}}/g, function(tag, key) {
 		var replacement = false;
